@@ -1,0 +1,23 @@
+[project]
+name = "JLS_HPM"
+version = "0.0.1"
+description = "Houdini Packaged Manager to load and unload the JLS packages"
+requires-python = ">=3.8"
+
+license = {file = "LICENSE.md"}
+readme = "README.md"
+
+author = "Jody L. Stocks"
+maintainer = "Jody L. Stocks
+copyright = "Copyright 2023, JLS: Houdini Package Manager"
+
+
+
+classifiers = [
+  "Development Status :: Early Development",
+  "Programming Language :: Python"
+]
+
+dependencies = [
+    gui = "PySide6"
+]
