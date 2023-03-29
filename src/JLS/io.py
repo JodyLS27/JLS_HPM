@@ -1,25 +1,49 @@
+import json
 import os
-import pathlib
 import typing
+from pathlib import Path
 
 
 class WriteData:
 
     @staticmethod
-    def write(fp: typing.TextIO):
-        # What will the following two lines give me ?
+    def write(fp: typing.TextIO, data):
+        '''Description
+        - This function dose something
+
+        Return
+        - Nothing
+        '''
+
         fp.mode
         fp.encoding
 
-        fp.write()
+        fp.write(data)
 
-    def json_write(path: pathlib.Path, data: dict, file: str):
-        import json
+    def write_text(self, path: Path, data: str, file: str):
+        '''Description
+        - This Method will take a path and write a text file based on data that
+        is given.
+
+        Return
+        - None
+        '''
 
         if not os.path.exists(path):
             os.makedirs(path)
 
-        file_path = pathlib.Path.joinpath(path, f"{file}.json")
+        file_path = Path.joinpath(path, f"{file}.txt")
 
-        with open(file_path, "r") as fp:
+        with open(file_path, "w") as fp:
+            self.write(fp, data)
+
+    @staticmethod
+    def json_write(path: Path, data: dict, file: str):       
+
+        if not os.path.exists(path):
+            os.makedirs(path)
+
+        file_path = Path.joinpath(path, f"{file}.json")
+
+        with open(file_path, "r") as fp:            
             json.dump(data, fp)
