@@ -12,7 +12,6 @@ class MenuBar(QMenuBar):
     def add_menu_items(self):
         self.menu_file = self.addMenu("File")
 
-
     def add_menu_actions(self):
         self.set_package_path = self.menu_file.addAction("Set Package Path")
         self.set_package_path.triggered.connect(self.set_package_path_clicked)

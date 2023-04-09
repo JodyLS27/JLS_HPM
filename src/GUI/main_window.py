@@ -9,10 +9,9 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("JLS: Houdini package manager")
 
         self.setMinimumWidth(350)
-        self.setMinimumHeight(400)
+        self.setMinimumHeight(400)        
         
-        
-        self.menuBar = menu_bar.MenuBar()
-        self.setMenuBar(self.menuBar)
+        menuBar = menu_bar.MenuBar()
+        self.setMenuBar(menuBar)
 
         

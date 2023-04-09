@@ -4,7 +4,7 @@ import typing
 from pathlib import Path
 
 
-class WriteData:
+class IO:
 
     @staticmethod
     def write(fp: typing.TextIO, data):
@@ -14,9 +14,6 @@ class WriteData:
         Return
         - Nothing
         '''
-
-        fp.mode
-        fp.encoding
 
         fp.write(data)
 
@@ -47,3 +44,5 @@ class WriteData:
 
         with open(file_path, "r") as fp:            
             json.dump(data, fp)
+
+    

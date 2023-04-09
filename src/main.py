@@ -1,12 +1,12 @@
 #!/usr/bin/env python
+import sys
+
+from PySide6.QtWidgets import QApplication
+
+from GUI.main_window import MainWindow
+
 
 def main():
-    import sys
-
-    from PySide6.QtWidgets import QApplication
-
-    from GUI.main_window import MainWindow
-
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
