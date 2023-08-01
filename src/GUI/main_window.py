@@ -6,12 +6,14 @@ from GUI import menu_bar
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("JLS: Houdini package manager")
+
+        # Main window
+        self.setWindowTitle("JLS: Package manager")
 
         self.setMinimumWidth(350)
-        self.setMinimumHeight(400)        
-        
-        menuBar = menu_bar.MenuBar()
-        self.setMenuBar(menuBar)
+        self.setMinimumHeight(400)
 
-        
+        # Load in widgets
+        menu_bar_main = menu_bar.MenuBar()
+
+        self.setMenuBar(menu_bar_main)
