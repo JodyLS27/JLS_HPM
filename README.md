@@ -5,20 +5,21 @@
 <br><br>
 
 ## Description
-This package manager will allow you to configure your DCC applications based on
-git repositories or a local network where your specific DCC tools and are 
-stored. 
-Once the location is ready you can load and upload those tools from a single 
-place for each DCC application.
-
-
+This package manager will load and unload your DCC pipline tools and packages.
+The packages can be loaded from a git repo or your local network based on a 
+path user defined path. You are then able to specific which DCC tools to load
+or unload per DCC.
 
 ### Supported DCC Applications
 - Houdini
 - Blender
 
+
+---
+
 #### Houdini
-This will setup your default paths and Libs in houdini without having to edit 
+This will set up your default paths and Libs in houdini without having to edit 
 your `houdini.env` or `.json` files.
 
-***NOTE:*** *For now this is set to the JLS repos only, but this will change as the system gets updated.*
+***NOTE:*** *For now this is set to the JLS repos only, but this will change as
+the system gets updated.*
