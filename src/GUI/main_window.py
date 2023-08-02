@@ -1,6 +1,5 @@
-from PySide6.QtWidgets import QMainWindow
-
 from GUI import menu_bar
+from PySide6.QtWidgets import QMainWindow
 
 
 class MainWindow(QMainWindow):

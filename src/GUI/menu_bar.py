@@ -1,6 +1,5 @@
-from PySide6.QtWidgets import QMenuBar
-
 from GUI import file_dialog
+from PySide6.QtWidgets import QMenuBar
 
 
 class MenuBar(QMenuBar):
