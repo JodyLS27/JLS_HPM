@@ -1,0 +1,10 @@
+name: push-test
+run-name: ${{ github.actor }} is doing a push test
+
+on: [ push ]
+
+jobs:
+  testing-push-automation:
+    runs-on: windows-latest
+    steps:
+      - uses: actions

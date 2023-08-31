@@ -1,5 +1,5 @@
 [project]
-name = "JLS_PM"
+name = "Package Manager"
 version = "0.0.1"
 description = "Package Manager to load and unload your DCC Pipeline tools"
 requires-python = ">=3.8"

@@ -7,7 +7,7 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         # Main window
-        self.setWindowTitle("JLS: Package manager")
+        self.setWindowTitle("utils: Package manager")
 
         self.setMinimumWidth(350)
         self.setMinimumHeight(400)
