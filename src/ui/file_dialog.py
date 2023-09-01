@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from JLS import io
+from utils import io
 from PySide6.QtWidgets import QFileDialog
 
 rw = io.IO()

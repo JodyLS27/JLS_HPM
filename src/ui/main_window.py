@@ -1,4 +1,4 @@
-from GUI import menu_bar
+from ui import menu_bar
 from PySide6.QtWidgets import QMainWindow
 
 

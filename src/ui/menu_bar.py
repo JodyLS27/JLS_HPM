@@ -1,4 +1,4 @@
-from GUI import file_dialog
+from ui import file_dialog
 from PySide6.QtWidgets import QMenuBar
 
 
